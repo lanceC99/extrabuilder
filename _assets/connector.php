@@ -26,7 +26,8 @@ if (is_file($rootConfig)) {
     require_once($rootConfig);
 
     // Get the full config
-    require_once(MODX_CORE_PATH.MODX_CONFIG_KEY.'/config.inc.php');
+    //require_once(MODX_CORE_PATH.MODX_CONFIG_KEY.'/config.inc.php');
+    require_once(MODX_CORE_PATH.'config/'.MODX_CONFIG_KEY.'.inc.php');//lanceC
 
 	// Set the connector include constant
 	define('MODX_CONNECTOR_INCLUDED', true);
